@@ -1,0 +1,160 @@
+object FrmExplorer: TFrmExplorer
+  Left = 0
+  Top = 0
+  Caption = 'Explorador'
+  ClientHeight = 546
+  ClientWidth = 364
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object ListBox: TListBox
+    Align = Client
+    Margins.Left = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Size.Width = 356.000000000000000000
+    Size.Height = 496.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    CanFocus = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = ListBoxItemClick
+    Viewport.Width = 356.000000000000000000
+    Viewport.Height = 496.000000000000000000
+  end
+  object img_folder: TImage
+    MultiResBitmap.Height = 64
+    MultiResBitmap.Width = 64
+    MultiResBitmap = <
+      item
+        Width = 64
+        Height = 64
+        PNG = {
+          89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+          DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          014D49444154785EEDDA314EC3401085E1D95957142923B800252700CEC009E8
+          20884B5050410D085F22E20A1C27888A8686DDC5231E2607209E28F3BE663C6E
+          A2FD6559292C4444441456C294D6E7B3D2A45791396EFDAB5AE55D55167A5596
+          B8B515C6005FCF79B5A9C3FFAA221F9ACBA15EC80AB7DC0D67FEB1E9C39BE137
+          66ADE47BAC5B610C3095E1913B6F7D778CD5DDE4014C69F5B1DD4887D5954B00
+          9574D40EF41AAB2B9700A64ABA6D0FB28FD58D5B80E18767B5CB7758DDB80530
+          F642AC4FDD095617AE014C15DF17E2DF3FC1D7BD86CB9D566B7DD39C16E9F4F3
+          C576F727606AAA3AAFA5F558E305301601973103AC6300CCB01800332C06C00C
+          8B0130C36200CCB01800332C06C00C8B0130C36200CCB01800332C06C00C8B01
+          30C36200CCB01800332C06C00C8B0130C31A03D8B733B8DC79EB671D03D88743
+          1122D81993A64BAC4444441496C8379A244550CF9BBC180000000049454E44AE
+          426082}
+        FileName = 
+          'D:\99Coders\Posts\141 - Criando um File Explorer no Android ----' +
+          '--\Fontes\Images\folder.png'
+      end>
+    Position.X = 16.000000000000000000
+    Position.Y = 72.000000000000000000
+    Visible = False
+  end
+  object img_file: TImage
+    MultiResBitmap.Height = 64
+    MultiResBitmap.Width = 64
+    MultiResBitmap = <
+      item
+        Width = 64
+        Height = 64
+        PNG = {
+          89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+          DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          01C349444154785EEDDAB14AC36010C0F14B6AB5B5148A20828BA37D03751085
+          E2AE73C0DDC5D7D0D947103A5757B1A8D8D257105C7468695574A82669A5DF67
+          A3375A25D77C69CADD6FB94B96267F52A8181042082184104C593849AEEAF5A2
+          52F6D1C083522A0B793C1D89E64BE7667F6F771B0F8DB1718656ADD5567D6537
+          86EB6ED4371FE8BAEED669E5EC1A0F8D2107009D3A9E0528E0911171442007D0
+          5AEDE06A94E908E4009665E77035CE6404FA572066A6224C4D80808908531520
+          107584C406B0ADD197166584C40698CF6470FB5D5411121B60B1B00029FBEFCB
+          8B22426203CCA5D3B0B2B40CF96C6EF87518FD8B7DDC08E4BF05AAB70D8D6B22
+          94363748F792D827202E1200275B1200275B1200275B1200275B1200275B1200
+          275B1200275B1200275B1200275B1200275B1200275B1200275B1200275BE400
+          4A2BDC264F69FABF29C9015CDFC76DF25CDFC32D3C7280A7E6AB3750937F0A82
+          6BE83CB75D3C0C8D1CC09FF9BC7CECB4A0EB7D8CF50852059FD9755D7868B7A0
+          AFAD0B3C1D1AF9FD809372B998022B7855D6E8DBA2FFE9F9F096CDE8B503C7B9
+          C753A1909F8043C7B9B3D4607DB89E43BFF7FE733646DF9FA92BE3DCBC104208
+          213803F802DBC8A48988A539A00000000049454E44AE426082}
+        FileName = 'D:\MrCont_Mobile\Mobile\Images\icon-file.png'
+      end>
+    Position.X = 16.000000000000000000
+    Position.Y = 128.000000000000000000
+    Visible = False
+  end
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = xFF4F8AD3
+    Size.Width = 364.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lbl_titulo: TLabel
+      Align = Contents
+      StyledSettings = []
+      Margins.Bottom = 17.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Lato'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Arquivos'
+      TabOrder = 3
+    end
+    object btn_cad_voltar: TSpeedButton
+      Align = Left
+      StyledSettings = [Family, Size, Style]
+      IconTintColor = claWhite
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'priortoolbutton'
+      TextSettings.FontColor = claWhite
+      OnClick = btn_cad_voltarClick
+    end
+    object btn_fechar: TSpeedButton
+      Align = Right
+      StyledSettings = [Family, Style]
+      IconTintColor = xFF6BAEAA
+      Margins.Right = 5.000000000000000000
+      Position.X = 303.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 56.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Fechar'
+      TextSettings.FontColor = claWhite
+      OnClick = btn_fecharClick
+    end
+    object lbl_path: TLabel
+      Align = Contents
+      StyledSettings = []
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 18.000000000000000000
+      Margins.Right = 60.000000000000000000
+      Size.Width = 254.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Lato'
+      TextSettings.Font.Size = 10.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = '\Documents'
+      TabOrder = 2
+    end
+  end
+end
