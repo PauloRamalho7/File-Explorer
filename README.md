@@ -1,3 +1,3 @@
 # File Explorer
- Explorador de Arquivos Simplificado - File Explorer
- Baseado no código Heber Mazzuti - 99 Coders
+ Explorador de Arquivos Simplificado <br> File Explorer
+ Baseado no código do Heber Mazzuti - 99 Coders
